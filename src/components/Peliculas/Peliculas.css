@@ -1,0 +1,46 @@
+.peliculas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    width: 18rem;
+    height: auto;
+
+    padding: 2rem;
+
+    border-radius: 20px;
+    box-shadow: 0 0 15px #ccc;
+    transition: 0.3s;
+}
+
+.head_pelicula img {
+    width: 100%;
+    height: auto;
+    border-radius: 30%;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.head_pelicula h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secundary-color);
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.year {
+    padding-top: 2rem;
+    color: var(--secundary-color);
+    text-align: center;
+}
+
+.year p span {
+    font-weight: bold;
+}
+
+.peliculas:hover, .head_pelicula img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--primary-color-400);
+}

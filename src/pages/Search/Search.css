@@ -1,0 +1,14 @@
+.input {
+    background-color: rgba(40, 41, 41, 0.72);
+    color: var(--secundary-color);
+    width: 70%;
+    padding: 6px 8px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--third-col);
+    box-sizing: border-box;
+}
+
+.btn {
+    color: var(--third-color);
+  }

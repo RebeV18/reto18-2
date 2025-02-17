@@ -1,0 +1,11 @@
+nav {
+    background-color: var(--third-color);
+}
+
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    color: var(--secundary-color);
+    list-style: none;
+}

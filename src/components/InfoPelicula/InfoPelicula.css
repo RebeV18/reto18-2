@@ -1,0 +1,47 @@
+info_pelicula {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+
+    width: 25rem;
+    height: auto;   
+
+    padding: 2rem;
+
+    border-radius: 20px;
+    box-shadow: 0 0 15px #ccc;
+    transition: 0.3s;
+}
+
+.info_pelicula img {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 15%;
+    height: auto;
+    border-radius: 10%;
+    box-shadow: 0 0 10px #ccc;
+}
+
+.text_pelicula {
+    grid-column-start: 2;
+}
+
+.text_pelicula h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--secundary-color);
+}
+
+.text_pelicula p {
+    color: var(--secundary-color);
+}
+
+.text_pelicula p span {
+    font-weight: bold;
+    color: var(--secundary-color);
+}
+
+.info_pelicula:hover, info_pelicula img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px var(--third-color);
+}

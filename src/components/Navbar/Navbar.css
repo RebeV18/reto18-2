@@ -1,11 +1,21 @@
-nav {
+.navb {
     background-color: var(--third-color);
+}
+
+.navb ul{
+    background-color: var(--third-color);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 1.5rem;
 }
 
 
 nav ul li {
+    background-color: var(--third-color);
     display: flex;
     flex-direction: row;
     color: var(--secundary-color);
     list-style: none;
+    padding: 1rem;
 }

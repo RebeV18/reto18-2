@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 export const Navbar = () => {
   return (
-    <nav>
+    <nav className="navb">
       <ul>
         <li>
           <Link to={"/"}>Inicio</Link>

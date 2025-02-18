@@ -6,16 +6,33 @@
     background-color: var(--third-color);
     display: flex;
     flex-direction: row;
+    align-items: flex-end;
+    align-content: flex-end;
+    text-align: center;
     list-style: none;
-    padding: 1.5rem;
+    padding: 0.5rem;
 }
 
 
-nav ul li {
+.navb ul li {
     background-color: var(--third-color);
     display: flex;
     flex-direction: row;
     color: var(--secundary-color);
     list-style: none;
     padding: 1rem;
+    align-items: flex-end;
+    align-content: flex-end;
+    text-align: center;
+}
+
+.navb ul li a {
+    background-color: var(--third-color);
+    display: flex;
+    flex-direction: row;
+    color: var(--primary-color);
+    list-style: none;
+    align-items: flex-end;
+    align-content: flex-end;
+    text-align: center;
 }

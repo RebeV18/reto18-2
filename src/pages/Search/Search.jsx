@@ -1,3 +1,5 @@
+import { Pelicula } from '../index'
+
 export const Buscar = () => {
     return (
         <form id="busqueda">
@@ -18,12 +20,12 @@ document.addEventListener('DOMContentLoaded', () => {
       return;
     }
     else{
-      const idPelicula = imagenesPeliculas.find((p) => p.nombre == nombrePelicula);
-      Pelicula(idPelicula);
+      const peliculaEncontrada = imagenesPeliculas.find((p) => p.nombre == nombrePelicula);
+      Pelicula(peliculaEncontrada.id);
     }
   }
 
   contact.addEventListener('submit', buscarPelicula);
 });
 
-export default Pelicula
+export default Buscar

@@ -4,3 +4,11 @@
     justify-content: center;
     align-items: center;
 }
+
+.container h2 {
+    color: var(--secundary-color)
+}
+
+.container p {
+    color: var(--secundary-color)
+}

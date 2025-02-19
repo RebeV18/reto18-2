@@ -1,11 +1,12 @@
 import { useState } from 'react';
+import './Search.css'
 
 function Search() {
   const [nombre, buscarPelicula] = useState("");
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`The name you entered was: ${nombre}`)
+    alert(`Pelicula: ${nombre}`)
   }
 
   return (
@@ -17,7 +18,7 @@ function Search() {
           onChange={(p) => buscarPelicula(p.target.value)}
         />
       </label>
-      <button className='submit' type="submit">Buscar</button>
+      <button className='submitSearch' type="onSubmit">Buscar</button>
     </form>
   )
 }

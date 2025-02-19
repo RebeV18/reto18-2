@@ -17,13 +17,13 @@ input {
     gap: 1rem;
 }
 
-button {
+submitSearch {
     color: var(--secundary-color);
     border-radius: 10px;
     box-shadow: 0 0 15px #ccc;
     transition: 0.3s;
     padding: 0.7rem;
     gap: 1rem;
-    display:flexbox;
+    display:flex;
     justify-content: flex-end;
 }

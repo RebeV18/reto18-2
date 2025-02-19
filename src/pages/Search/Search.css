@@ -1,14 +1,29 @@
-.input {
-    background-color: rgba(40, 41, 41, 0.72);
+label {
     color: var(--secundary-color);
     width: 70%;
-    padding: 6px 8px;
+    padding: 3rem;
     margin: 8px 0;
-    display: inline-block;
-    border: 1px solid var(--third-col);
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
-.btn {
-    color: var(--third-color);
-  }
+input {
+    color: var(--secundary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ccc;
+    transition: 0.3s;
+    padding: 0.5rem;
+    gap: 1rem;
+}
+
+button {
+    color: var(--secundary-color);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ccc;
+    transition: 0.3s;
+    padding: 0.7rem;
+    gap: 1rem;
+    display:flexbox;
+    justify-content: flex-end;
+}

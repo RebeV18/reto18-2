@@ -1,31 +1,25 @@
-import { Pelicula } from '../index'
+import { useState } from 'react';
 
-export const Buscar = () => {
-    return (
-        <form id="busqueda">
-            <input className="input" type="text" id="peliculaBuscada" placeholder="Escribe nombre de la película" />
-            <button className="btn" id="submit">Buscar</button>
-        </form>
-    )
-}
+function Search() {
+  const [nombre, buscarPelicula] = useState("");
 
-document.addEventListener('DOMContentLoaded', () => {
-  const film = document.getElementById('peliculaBuscada');
-
-  const buscarPelicula = (evento) => {
-    evento.preventDefault();
-    const nombrePelicula = film.value.trim();
-    if (nombrePelicula === '') {
-      alert("Por favor, ingrese un nombre válido");
-      return;
-    }
-    else{
-      const peliculaEncontrada = imagenesPeliculas.find((p) => p.nombre == nombrePelicula);
-      Pelicula(peliculaEncontrada.id);
-    }
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    alert(`The name you entered was: ${nombre}`)
   }
 
-  contact.addEventListener('submit', buscarPelicula);
-});
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>Digite el nombre de la película  
+        <input 
+          type="text" 
+          value={nombre}
+          onChange={(p) => buscarPelicula(p.target.value)}
+        />
+      </label>
+      <button className='submit' type="submit">Buscar</button>
+    </form>
+  )
+}
 
-export default Buscar
+export default Search

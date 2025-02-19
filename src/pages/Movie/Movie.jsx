@@ -2,9 +2,9 @@ import { InfoPelicula, Header } from "../../components/index";
 import { imagenesPeliculas } from "../../data/peliculas";
 import PropTypes from 'prop-types';
 
-import './Pelicula.css'
+import './Movie.css'
 
-const Pelicula = ({ idP }) => {
+const Movie = ({ idP }) => {
   const pelicula = imagenesPeliculas.find(p => p.id === idP);
   return (
     <>
@@ -23,4 +23,8 @@ const Pelicula = ({ idP }) => {
   );
 };
 
-export default Pelicula
+Movie.propTypes = {
+  idP: PropTypes.number.isRequired,
+}
+
+export default Movie

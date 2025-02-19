@@ -1,4 +1,4 @@
-import { Peliculas, Header } from "../../components/index";
+import { Peliculas, Pelicula, Header } from "../../components/index";
 import { imagenesPeliculas } from "../../data/peliculas";
 import { useState } from "react";
 
@@ -9,7 +9,8 @@ const Home = () => {
 
   const handleClick = (event) => {
     event.preventDefault();
-    alert(`Pelicula: ${id}`);
+    alert(`Pelicula: ${event.key}`);
+    <Pelicula idP={pelicula.id} />
   };
 
   return (

@@ -18,12 +18,13 @@ input {
 }
 
 .submitSearch {
+    display: flex;
+    justify-content: flex-end;
     color: var(--secundary-color);
     border-radius: 10px;
     box-shadow: 0 0 15px #ccc;
     transition: 0.3s;
     padding: 0.7rem;
     gap: 1rem;
-    display:flex;
-    justify-content: flex-end;
+    text-align: center;
 }

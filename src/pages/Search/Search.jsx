@@ -9,6 +9,9 @@ function Search() {
     alert(`Pelicula: ${nombre}`)
   }
 
+
+
+
   return (
     <form onSubmit={handleSubmit}>
       <label>Digite el nombre de la película  
@@ -20,6 +23,7 @@ function Search() {
       </label>
       <button className='submitSearch' type="onSubmit">Buscar</button>
     </form>
+
   )
 }
 

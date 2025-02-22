@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Search.css";
+const Movie = lazy(() => import('../pages/Movie/Movie'));
 
 const Search = () => {
   const [nombreB, setSearch] = useState({
@@ -15,9 +16,8 @@ const Search = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    console.log(nombreB);
+    //<Movie movieName={nombreB} />;
     event.target.reset();
-    //<Movie moviename={nombreB} />;
   };
 
   return (

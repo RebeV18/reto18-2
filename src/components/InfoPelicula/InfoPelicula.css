@@ -1,28 +1,25 @@
-info_pelicula {
+.info_pelicula {
     display: flex;
     flex-direction: row;
-    align-items: center;
-
-    width: 25rem;
-    height: auto;   
-
+    align-content: flex-start;
     padding: 2rem;
+    gap: 2rem;
 
     border-radius: 20px;
     box-shadow: 0 0 15px #ccc;
     transition: 0.3s;
 }
 
+.text_pelicula {
+    color: var(--secundary-color);
+}
+
 .info_pelicula img {
-    
-    width: 15%;
+    align-content: flex-end;
+    width: 35%;
     height: auto;
     border-radius: 10%;
     box-shadow: 0 0 10px #ccc;
-}
-
-.text_pelicula {
-    grid-column-start: 2;
 }
 
 .text_pelicula h3 {

@@ -2,7 +2,11 @@ import { useForm } from react-hook-form;
 
 export const FormHook = () => {
   const {register, errors, handleSubmit} = useForm();
-    
+  
+  const onSubmit = (data, e) => {
+    console.log(data);
+    e.target.reset();
+  }
 
   return (
     <>
@@ -13,8 +17,15 @@ export const FormHook = () => {
           className="form-control my-2"
           type="text"
           name="nombre"
-          onChange={handleBuscar}
+          ref={
+            register=({
+              required: {value: true, message: 'Ingrese nombre de la película'}
+            })
+          }  
         />
+        <span className="text-danger text-small d-block mb-2">
+          {errors?.nombre?.message}
+        </span>
         <button className="btn" type="onSubmit">
           Buscar
         </button>

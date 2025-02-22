@@ -16,6 +16,7 @@ const Search = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(nombreB);
+    event.target.reset();
     //<Movie moviename={nombreB} />;
   };
 
@@ -31,7 +32,7 @@ const Search = () => {
           onChange={handleBuscar}
         />
         <button className="btn" type="onSubmit">
-          Buscar
+          Buscar Película
         </button>
       </form>
     </div>

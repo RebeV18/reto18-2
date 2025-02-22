@@ -1,6 +1,6 @@
 .container-search {
+    background-color: var(primary-color);
     color: var(--secundary-color);
-    width: 70%;
     padding: 3rem;
     margin: 8px 0;
     display: flex;
@@ -16,6 +16,7 @@ h1 {
 }
 
 input {
+    background-color: var(primary-color);
     color: var(--secundary-color);
     border-radius: 10px;
     box-shadow: 0 0 15px #ccc;
@@ -23,12 +24,10 @@ input {
     padding: 0.7rem;
     gap: 1rem;
     margin-bottom: 1rem;
-    width: 50rem;
+    width: 500px;
 }
 
 .btn {
-    display: flex;
-    justify-content: flex-end;
     color: var(--secundary-color);
     border-radius: 10px;
     box-shadow: 0 0 15px #ccc;

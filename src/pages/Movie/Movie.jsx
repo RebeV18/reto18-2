@@ -4,8 +4,8 @@ import PropTypes from 'prop-types';
 
 import './Movie.css'
 
-const Movie = ({ idP }) => {
-  const pelicula = imagenesPeliculas.find(p => p.id === idP);
+const Movie = ({ movieName }) => {
+  const pelicula = imagenesPeliculas.find(p => p.nombre === movieName);
   return (
     <>
       <Header title={pelicula.nombre} subtitle={pelicula.anho} />

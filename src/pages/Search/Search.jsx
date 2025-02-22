@@ -1,30 +1,41 @@
-import { useState } from 'react';
-import './Search.css'
+import { useState } from "react";
+import "./Search.css";
 
-function Search() {
-  const [nombre, buscarPelicula] = useState("");
+const Search = () => {
+  const [nombreB, setSearch] = useState({
+    nombreBuscado: ''
+  });
+
+  const handleBuscar = (event) => {
+    setSearch({
+      [event.target.value] : event.target.value
+    })
+    console.log(event.target.value);
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    alert(`Pelicula: ${nombre}`)
-  }
-
-
-
+    console.log(nombreB);
+    //<Movie moviename={nombreB} />;
+  };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label>Digite el nombre de la película  
-        <input 
-          type="text" 
-          value={nombre}
-          onChange={(p) => buscarPelicula(p.target.value)}
+    <div className="container-search">
+      <h1>Buscar película</h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          placeholder="Digite el nombre de la película"
+          className="form-control"
+          type="text"
+          name="nombreB"
+          onChange={handleBuscar}
         />
-      </label>
-      <button className='submitSearch' type="onSubmit">Buscar</button>
-    </form>
-
-  )
+        <button className="btn" type="onSubmit">
+          Buscar
+        </button>
+      </form>
+    </div>
+  );
 }
 
-export default Search
+export default Search;

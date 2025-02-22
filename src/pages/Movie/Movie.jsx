@@ -8,7 +8,6 @@ const Movie = ({ movieName }) => {
   const pelicula = imagenesPeliculas.find(p => p.nombre === movieName);
   return (
     <>
-      <Header title={pelicula.nombre} subtitle={pelicula.anho} />
       <div className="container">
         {
           <InfoPelicula

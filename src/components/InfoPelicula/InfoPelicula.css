@@ -1,6 +1,6 @@
 info_pelicula {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
     align-items: center;
 
     width: 25rem;
@@ -14,8 +14,7 @@ info_pelicula {
 }
 
 .info_pelicula img {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    
     width: 15%;
     height: auto;
     border-radius: 10%;

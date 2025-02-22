@@ -1,22 +1,24 @@
 import { useState } from "react";
 import "./Search.css";
-const Movie = lazy(() => import('../pages/Movie/Movie'));
+import Movie from "../Movie/Movie";
 
 const Search = () => {
   const [nombreB, setSearch] = useState({
     nombreBuscado: ''
   });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleBuscar = (event) => {
     setSearch({
-      [event.target.value] : event.target.value
-    })
+      nombreBuscado: event.target.value
+    });
     console.log(event.target.value);
   };
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    //<Movie movieName={nombreB} />;
+    console.log(nombreB);
+    setSubmitted(true);
     event.target.reset();
   };
 
@@ -31,10 +33,11 @@ const Search = () => {
           name="nombreB"
           onChange={handleBuscar}
         />
-        <button className="btn" type="onSubmit">
+        <button className="btn" type="submit">
           Buscar Película
         </button>
       </form>
+      {submitted && <Movie movieName={nombreB.nombreBuscado} />}
     </div>
   );
 }

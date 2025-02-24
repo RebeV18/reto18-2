@@ -1,20 +1,18 @@
-import { InfoPelicula, Header } from "../../components/index";
-import { imagenesPeliculas } from "../../data/peliculas";
+import { InfoPelicula } from "../../components/index";
 import PropTypes from 'prop-types';
 
 import './Movie.css'
 
-const Movie = ({ movieName }) => {
-  const pelicula = imagenesPeliculas.find(p => p.nombre === movieName);
+const Movie = ({ movie }) => {
   return (
     <>
       <div className="container">
         {
           <InfoPelicula
-            key={pelicula.id}
-            nombre={pelicula.nombre}
-            imageSrc={pelicula.image}
-            sinopsis={pelicula.sinopsis}
+            key={movie.id}
+            nombre={movie.nombre}
+            imageSrc={movie.image}
+            sinopsis={movie.sinopsis}
           />
         }
       </div>
@@ -23,7 +21,7 @@ const Movie = ({ movieName }) => {
 };
 
 Movie.propTypes = {
-  idP: PropTypes.number.isRequired,
+  movieName: PropTypes.object.isRequired,
 }
 
 export default Movie

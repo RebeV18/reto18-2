@@ -10,6 +10,14 @@
     gap: 1.5rem;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
 h1 {
     color: var(--secundary-color);
     padding-bottom: 3rem;

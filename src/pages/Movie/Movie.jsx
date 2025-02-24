@@ -21,7 +21,7 @@ const Movie = ({ movie }) => {
 };
 
 Movie.propTypes = {
-  movieName: PropTypes.object.isRequired,
+  movie: PropTypes.object.isRequired,
 }
 
 export default Movie

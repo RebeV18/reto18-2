@@ -8,7 +8,7 @@ const Search = () => {
 
   const handleSubmit = (event) => {
     setSearchMovie(event.target.value);
-    movieFound = imagenesPeliculas.find((m) => m.nombre === movieName);
+    movieFound = imagenesPeliculas.find((m) => m.nombre == movieName);
     //<Movie movie={movieFound}/>
     <Link
       to={{

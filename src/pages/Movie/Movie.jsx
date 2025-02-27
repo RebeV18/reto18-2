@@ -13,16 +13,18 @@ const Movie = () => {
   }
 
   return (
-    <div className="container">
-      <InfoPelicula
-        nombre={movie.nombre}
-        imageSrc={movie.image}
-        sinopsis={movie.sinopsis}
-      />
-      <button className="btn" onClick={() => window.history.back()}>
-        Volver
-      </button>
-    </div>
+    <>
+      <div className="container">
+        <InfoPelicula
+          nombre={movie.nombre}
+          imageSrc={movie.image}
+          sinopsis={movie.sinopsis}
+        />
+        <button className="btn" onClick={() => window.history.back()}>
+          Volver
+        </button>
+      </div>
+    </>
   );
 };
 

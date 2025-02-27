@@ -1,6 +1,7 @@
 import { Peliculas, Header } from "../../components/index";
 import { imagenesPeliculas } from "../../data/peliculas";
 import { useNavigate } from "react-router-dom";
+import { Footer } from "../../components/Footer/Footer";
 import "./Home.css";
 
 const Home = () => {
@@ -24,6 +25,7 @@ const Home = () => {
           </button>
         ))}
       </div>
+      <Footer />
     </>
   );
 };

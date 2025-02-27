@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Search.css";
 import { imagenesPeliculas } from "../../data/peliculas";
-import { Footer } from "../../components/Footer/Footer";
 
 const Search = () => {
   const [movieName, setMovieName] = useState("");
@@ -41,7 +40,6 @@ const Search = () => {
         </button>
       </form>
       {searchPerformed && !movieFound && <p>Película no encontrada</p>}
-      <Footer />
     </div>
   );
 };

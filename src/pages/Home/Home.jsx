@@ -1,16 +1,13 @@
 import { Peliculas, Header } from "../../components/index";
 import { imagenesPeliculas } from "../../data/peliculas";
-import { useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
-  const [id, mostrar] = useState("");
+  const navigate = useNavigate();
 
-  const handleClick = (event) => {
-    event.preventDefault();
-    alert(`Pelicula: ${event.key}`);
-    //<Pelicula idP={pelicula.id} />
+  const handleClick = (id) => {
+    navigate(`/movie/${id}`);
   };
 
   return (
@@ -18,9 +15,8 @@ const Home = () => {
       <Header title="Películas" subtitle="Cartelera de Películas" />
       <div className="container">
         {imagenesPeliculas.map((pelicula) => (
-          <button onClick={handleClick}>
+          <button key={pelicula.id} onClick={() => handleClick(pelicula.id)}>
             <Peliculas
-              key={pelicula.id}
               nombre={pelicula.nombre}
               imageSrc={pelicula.image}
               anho={pelicula.anho}

@@ -5,8 +5,12 @@ import "./Navbar.css";
 export const Navbar = () => {
   return (
     <nav className="nav-container">
-      <Link to="/">Inicio</Link>
-      <Link to="/search">Buscar</Link>
+      <Link to="/" className="boton">
+        Inicio
+      </Link>
+      <Link to="/search" className="boton">
+        Buscar
+      </Link>
     </nav>
   );
 };

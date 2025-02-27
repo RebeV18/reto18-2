@@ -1,48 +1,48 @@
 .container-search {
-    background-color: var(primary-color);
-    color: var(--secundary-color);
-    padding: 3rem;
-    margin: 8px 0;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    gap: 1.5rem;
+  background-color: var(primary-color);
+  color: var(--secundary-color);
+  padding: 3rem;
+  margin: 8px 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
-    gap: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  gap: 1.5rem;
 }
 
 h1 {
-    color: var(--secundary-color);
-    padding-bottom: 3rem;
+  color: var(--secundary-color);
+  padding-bottom: 3rem;
 }
 
 input {
-    background-color: var(primary-color);
-    color: var(--secundary-color);
-    border-radius: 10px;
-    box-shadow: 0 0 15px #ccc;
-    transition: 0.3s;
-    padding: 0.7rem;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    width: 500px;
+  background-color: var(primary-color);
+  color: var(--secundary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ccc;
+  transition: 0.3s;
+  padding: 0.7rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  width: 500px;
 }
 
 .btn {
-    color: var(--secundary-color);
-    border-radius: 10px;
-    box-shadow: 0 0 15px #ccc;
-    transition: 0.3s;
-    padding: 0.7rem;
-    gap: 1rem;
-    text-align: center;
+  color: var(--secundary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ccc;
+  transition: 0.3s;
+  padding: 0.7rem;
+  gap: 1rem;
+  text-align: center;
 
-    margin-bottom: 5rem;
+  margin-bottom: 5rem;
 }

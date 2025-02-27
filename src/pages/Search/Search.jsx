@@ -1,24 +1,28 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Search.css";
 import { imagenesPeliculas } from "../../data/peliculas";
-import Movie from "../Movie/Movie";
 
 const Search = () => {
-  const [movieName, setSearchMovie] = useState("");
+  const [movieName, setMovieName] = useState("");
+  const [movieFound, setMovieFound] = useState(null);
+  const [searchPerformed, setSearchPerformed] = useState(false);
+  const navigate = useNavigate();
+
+  const handleChange = (event) => {
+    setMovieName(event.target.value);
+  };
 
   const handleSubmit = (event) => {
-    setSearchMovie(event.target.value);
-    movieFound = imagenesPeliculas.find((m) => m.nombre == movieName);
-    //<Movie movie={movieFound}/>
-    <Link
-      to={{
-        pathname: `/movie/${props.movieFound.id}`,
-        aboutProps: {
-          movie: `${props.movieFound}`,
-        },
-      }}
-    >
-    </Link>
+    event.preventDefault();
+    const found = imagenesPeliculas.find(
+      (m) => m.nombre.toLowerCase() === movieName.toLowerCase()
+    );
+    setMovieFound(found);
+    setSearchPerformed(true);
+    if (found) {
+      navigate(`/movie/${found.id}`, { state: { movie: found } });
+    }
   };
 
   return (
@@ -29,12 +33,13 @@ const Search = () => {
           placeholder="Digite el nombre de la película"
           type="text"
           value={movieName}
-          onChange={handleSubmit}
+          onChange={handleChange}
         />
         <button className="btn" type="submit">
           Buscar Película
         </button>
       </form>
+      {searchPerformed && !movieFound && <p>Película no encontrada</p>}
     </div>
   );
 };

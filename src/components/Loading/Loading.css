@@ -1,14 +1,14 @@
 .load {
-    color: var(--secundary-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    padding-top: 3rem;
+  color: var(--secundary-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  padding-top: 3rem;
 }
 
 .load-icon {
-    size: 4rem;
-    padding: 1.5rem;
+  size: 4rem;
+  padding: 1.5rem;
 }

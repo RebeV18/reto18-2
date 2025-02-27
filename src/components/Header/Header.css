@@ -1,25 +1,25 @@
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    padding: 3rem 3rem;
+  padding: 3rem 3rem;
 }
 
 header h1 {
-    font-size: clamp(1.2rem, 5vw, 3rem);
-    color:#fdfdfd;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  color: #fdfdfd;
 
-    transition: 0.3s;
+  transition: 0.3s;
 }
 
 header h1:hover {
-    text-shadow: 0 0 25px #fff;
-    transform: scale(1.05);
+  text-shadow: 0 0 25px #fff;
+  transform: scale(1.05);
 }
 
 header p {
-    color: #fdfdfd;
-    font-size: clamp(0.5rem, 5vw, 1.5rem);
+  color: #fdfdfd;
+  font-size: clamp(0.5rem, 5vw, 1.5rem);
 }

@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Navbar } from "../components/index";
+import { Footer } from "../components/Footer/Footer";
 import { NotFound } from "../components/NotFound/NotFound";
 import { Loading } from "../components/Loading/Loading";
 
@@ -21,6 +22,7 @@ export const AppRouter = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   );
 };

@@ -1,43 +1,44 @@
 .info_pelicula {
-    display: flex;
-    flex-direction: row;
-    align-content: flex-start;
-    padding: 2rem;
-    gap: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  padding: 2rem;
+  gap: 2rem;
 
-    border-radius: 20px;
-    box-shadow: 0 0 15px #ccc;
-    transition: 0.3s;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #ccc;
+  transition: 0.3s;
 }
 
 .text_pelicula {
-    color: var(--secundary-color);
+  color: var(--secundary-color);
 }
 
 .info_pelicula img {
-    align-content: flex-end;
-    width: 35%;
-    height: auto;
-    border-radius: 10%;
-    box-shadow: 0 0 10px #ccc;
+  align-content: flex-end;
+  width: 35%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0 0 10px #ccc;
 }
 
 .text_pelicula h3 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: var(--secundary-color);
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--secundary-color);
 }
 
 .text_pelicula p {
-    color: var(--secundary-color);
+  color: var(--secundary-color);
 }
 
 .text_pelicula p span {
-    font-weight: bold;
-    color: var(--secundary-color);
+  font-weight: bold;
+  color: var(--secundary-color);
 }
 
-.info_pelicula:hover, info_pelicula img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 25px var(--third-color);
+.info_pelicula:hover,
+info_pelicula img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--third-color);
 }

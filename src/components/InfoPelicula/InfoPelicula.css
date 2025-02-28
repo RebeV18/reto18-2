@@ -12,6 +12,7 @@
 
 .text_pelicula {
   color: var(--secundary-color);
+  padding: 2rem;
 }
 
 .info_pelicula img {
@@ -26,10 +27,12 @@
   font-size: 2rem;
   font-weight: bold;
   color: var(--secundary-color);
+  padding-bottom: 0.5rem;
 }
 
 .text_pelicula p {
   color: var(--secundary-color);
+  padding-bottom: 1rem;
 }
 
 .text_pelicula p span {

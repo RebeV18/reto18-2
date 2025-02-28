@@ -17,6 +17,7 @@ const Movie = () => {
       <div className="container">
         <InfoPelicula
           nombre={movie.nombre}
+          anho={movie.anho}
           imageSrc={movie.image}
           sinopsis={movie.sinopsis}
         />

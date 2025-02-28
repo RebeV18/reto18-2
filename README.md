@@ -1,4 +1,4 @@
-#Reto 18
+# Reto 18
 
 Crear una aplicación web con React y React Router que muestre una lista de películas y permita ver los detalles de cada una de ellas en una página separada. Además, la aplicación debe tener una página de búsqueda que permita buscar películas por título y mostrar los resultados en una lista.
 

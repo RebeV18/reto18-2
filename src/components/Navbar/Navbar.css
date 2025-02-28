@@ -2,7 +2,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 2rem;
   padding: 1rem;
   margin-right: 3rem;
   margin-bottom: 3rem;
@@ -23,6 +23,5 @@
 
 .boton:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px var(--primary-color-400);
-  border: 1px solid var(--secundary-color);
+  box-shadow: 0 0 25px var(--third-color);
 }

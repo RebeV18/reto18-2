@@ -17,7 +17,7 @@
 
 .info_pelicula img {
   align-content: flex-end;
-  width: 35%;
+  width: 50%;
   height: auto;
   border-radius: 10%;
   box-shadow: 0 0 10px #ccc;
@@ -44,4 +44,15 @@
 info_pelicula img:hover {
   transform: scale(1.05);
   box-shadow: 0 0 25px var(--third-color);
+}
+
+@media screen and (max-width: 768px) {
+  .info_pelicula {
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .info_pelicula img {
+    width: 80%;
+  }
 }
